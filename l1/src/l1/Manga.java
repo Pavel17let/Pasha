@@ -1,7 +1,7 @@
 package l1;
 
 
-public class Manga extends Book{
+public class Manga extends Main1{
 
     private String status;
 
