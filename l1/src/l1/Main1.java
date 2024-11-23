@@ -1,6 +1,6 @@
 package l1;
 
-public abstract class Main1 {
+public abstract class Main1 implements Literature{
 
     private String name;
     private String author;
@@ -23,7 +23,7 @@ public abstract class Main1 {
     public void setAuthor(String author) {
         this.author = author;
     }
-    public void print(){
-        System.out.println(name + " " + author);
+    public String print(){
+        return name + " " + author;
     }
 }

@@ -1,6 +1,8 @@
 package l1;
 
-public class Category {
+import java.util.Objects;
+
+public class Category{
     private String genre;
     private String type;
 
@@ -11,6 +13,16 @@ public class Category {
     public String getGenre() {
         return genre;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Category category = (Category) o;
+        return Objects.equals(genre, category.genre) && Objects.equals(type, category.type);
+    }
+
+
     public void setGenre(String genre) {
         this.genre = genre;
     }

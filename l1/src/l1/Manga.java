@@ -17,8 +17,9 @@ public class Manga extends Main1{
     public void setStatus(String status) {
         this.status = status;
     }
+
     @Override
-    public void print(){
-        System.out.println(super.getName() + " " + super.getAuthor() + " " + status);
+    public void l() {
+        System.out.println("Манга: " + print());
     }
 }

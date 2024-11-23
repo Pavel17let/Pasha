@@ -1,6 +1,6 @@
 package l1;
 
-public class Stack {
+public class Stack{
     private Book book;
     private Category category;
     public Stack(Book book, Category category){
@@ -24,6 +24,6 @@ public class Stack {
         this.category = category;
     }
     public void print(){
-        System.out.println(book.getAuthor() + " : " + book.getName()  + " - " + category.getGenre() + " " + category.getType());
+        System.out.println(book.getClass() + " : " + book.getClass()  + " - " + category.getGenre() + " " + category.getType());
     }
 }
